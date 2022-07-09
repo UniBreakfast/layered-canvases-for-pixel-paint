@@ -1,0 +1,43 @@
+deep-scene {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+}
+
+.layers {
+  flex-grow: 1;
+  position: relative;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+}
+
+.layer>* {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+td {
+  border: 1px solid gray;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background-color: lightgray;
+  padding: 20px 20px 18px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
